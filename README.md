@@ -1,5 +1,7 @@
 # opa-fugue-regula
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-fugue-regula)
+
 Clean-room infrastructure-as-code security rules for the [Vulnetix CLI](https://github.com/Vulnetix/cli). Covers Terraform (AWS, Azure, GCP), AWS CloudFormation, Azure Resource Manager, and Kubernetes manifests — 275 rules mapped to CIS benchmarks, PCI-DSS, NIST 800-53, HIPAA, SOC2, and ISO 27001.
 
 ## Clean-Room Methodology
