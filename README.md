@@ -1,18 +1,18 @@
 # opa-fugue-regula
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-fugue-regula)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/opa-fugue-regula)
 
-Clean-room infrastructure-as-code security rules for the [Vulnetix CLI](https://github.com/Vulnetix/cli). Covers Terraform (AWS, Azure, GCP), AWS CloudFormation, Azure Resource Manager, and Kubernetes manifests — 275 rules mapped to CIS benchmarks, PCI-DSS, NIST 800-53, HIPAA, SOC2, and ISO 27001.
+Clean-room infrastructure-as-code security rules for the [Vulnesis CLI](https://github.com/Vulnesis/cli). Covers Terraform (AWS, Azure, GCP), AWS CloudFormation, Azure Resource Manager, and Kubernetes manifests — 275 rules mapped to CIS benchmarks, PCI-DSS, NIST 800-53, HIPAA, SOC2, and ISO 27001.
 
 ## Clean-Room Methodology
 
 These rules were produced using a **clean-room** approach:
 
 1. The security **intent** of each rule was derived from the [Fugue Regula](https://github.com/fugue/regula) project (Apache-2.0, Copyright 2020–2022 Fugue, Inc.) — specifically, the *what* and *why* of each misconfiguration check (e.g., "S3 buckets should enable server-side encryption").
-2. The Rego **implementations** were independently written for the Vulnetix `input.file_contents` text-scanning schema. They do not incorporate code from Regula's Go-based HCL loader, parsed-resource graph, or `lib/` runtime.
+2. The Rego **implementations** were independently written for the Vulnesis `input.file_contents` text-scanning schema. They do not incorporate code from Regula's Go-based HCL loader, parsed-resource graph, or `lib/` runtime.
 3. The original Regula source served as a functional specification; the code here is a new expression of that specification.
 
-This approach ensures the rules are purpose-built for Vulnetix while faithfully covering the same IaC misconfiguration surface that Regula addresses.
+This approach ensures the rules are purpose-built for Vulnesis while faithfully covering the same IaC misconfiguration surface that Regula addresses.
 
 ## What These Rules Cover
 
@@ -63,20 +63,20 @@ opa-fugue-regula/
 
 ```bash
 # Use alongside built-in rules
-vulnetix scan --rule Vulnetix/opa-fugue-regula
+vulnesis scan --rule Vulnesis/opa-fugue-regula
 
 # Use only these rules (disable built-ins)
-vulnetix scan --rule Vulnetix/opa-fugue-regula --disable-default-rules
+vulnesis scan --rule Vulnesis/opa-fugue-regula --disable-default-rules
 
 # Combine with other custom rule repos
-vulnetix scan \
-  --rule Vulnetix/opa-fugue-regula \
+vulnesis scan \
+  --rule Vulnesis/opa-fugue-regula \
   --rule myorg/additional-rules
 ```
 
 ## Input Schema
 
-Rules operate on Vulnetix's `input.file_contents` map (file path → raw file text). The `_lib` helper packages handle format-specific parsing:
+Rules operate on Vulnesis's `input.file_contents` map (file path → raw file text). The `_lib` helper packages handle format-specific parsing:
 
 - **Terraform**: regex-based HCL block extraction (no Go HCL parser required)
 - **CloudFormation**: `yaml.unmarshal` / `json.unmarshal` on YAML/JSON templates
@@ -85,14 +85,14 @@ Rules operate on Vulnetix's `input.file_contents` map (file path → raw file te
 
 ## Rule Format
 
-Each rule exports two values per the [Vulnetix custom rules spec](https://docs.vulnetix.io/docs/sast-rules/custom-rules/):
+Each rule exports two values per the [Vulnesis custom rules spec](https://docs.vulnetix.io/docs/sast-rules/custom-rules/):
 
 - `metadata` — rule identity, severity, CWE, tags
 - `findings` — set of detected misconfiguration objects
 
 ## Attribution
 
-The security check intent in this repository derives from [Fugue Regula](https://github.com/fugue/regula), Copyright 2020–2022 Fugue, Inc., licensed under the Apache License 2.0. The Rego implementations are original works written for the Vulnetix input schema.
+The security check intent in this repository derives from [Fugue Regula](https://github.com/fugue/regula), Copyright 2020–2022 Fugue, Inc., licensed under the Apache License 2.0. The Rego implementations are original works written for the Vulnesis input schema.
 
 ## License
 

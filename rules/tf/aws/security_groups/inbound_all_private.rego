@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00350).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_security_group ingress rules with all-ports from any CIDR (not self-only).
 
 package vulnetix.rules.fugue_tf_aws_sg_04

@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00229).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_s3_bucket lacking a matching aws_s3_bucket_public_access_block or account-wide block with all four flags true.
 
 package vulnetix.rules.fugue_tf_aws_s3_01

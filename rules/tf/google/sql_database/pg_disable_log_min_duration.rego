@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00430).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
 package vulnetix.rules.fugue_tf_gcp_sql_pg_disable_log_min_duration
 

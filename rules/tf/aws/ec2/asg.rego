@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00014).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Limitation: does not resolve subnet AZs through aws_subnet cross-references.
 
 package vulnetix.rules.fugue_tf_aws_ec2_01

@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00331).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
 package vulnetix.rules.fugue_tf_az_pg_log_disconnections
 

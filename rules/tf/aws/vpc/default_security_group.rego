@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00089).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_default_security_group resources that declare any ingress or egress block with a cidr_block.
 
 package vulnetix.rules.fugue_tf_aws_vpc_01

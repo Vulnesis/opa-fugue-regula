@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00252).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: text-scan inline key policy for Allow with AWS:"*" principal and no caller condition.
 
 package vulnetix.rules.fugue_tf_aws_kms_01

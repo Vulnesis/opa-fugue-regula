@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00220).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_iam_role_policy attached to roles referenced by aws_iam_instance_profile when the policy allows s3:List* / s3:ListAllMyBuckets / s3:*.
 
 package vulnetix.rules.fugue_tf_aws_iam_03

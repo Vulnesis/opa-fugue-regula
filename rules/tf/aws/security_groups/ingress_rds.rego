@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00104).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_security_group attached to aws_db_instance/aws_rds_cluster that has ingress all-ports from 0.0.0.0/0.
 
 package vulnetix.rules.fugue_tf_aws_sg_42

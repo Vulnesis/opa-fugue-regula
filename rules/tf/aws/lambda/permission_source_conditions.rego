@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00499).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_lambda_permission with a *.amazonaws.com service principal and no source_arn,
 # or with s3/ses principal missing source_account.
 

@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00358).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_network_acl with an ingress block allowing port 3389 from 0.0.0.0/0, and standalone aws_network_acl_rule of the same.
 
 package vulnetix.rules.fugue_tf_aws_vpc_03

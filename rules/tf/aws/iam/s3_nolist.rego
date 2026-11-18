@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00218).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: text-scans inline policy bodies for broad s3:List* actions.
 
 package vulnetix.rules.fugue_tf_aws_iam_14

@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00489).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 
 package vulnetix.rules.fugue_k8s_allow_privilege_escalation
 

@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00028).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags CloudTrail target buckets with a literal public-read/public-read-write acl.
 
 package vulnetix.rules.fugue_tf_aws_ct_06

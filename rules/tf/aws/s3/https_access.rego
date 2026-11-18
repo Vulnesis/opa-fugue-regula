@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00100).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_s3_bucket missing a bucket_policy with Deny+aws:SecureTransport=false statement.
 
 package vulnetix.rules.fugue_tf_aws_s3_10

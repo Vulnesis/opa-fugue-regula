@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00211).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: text-scans aws_s3_bucket_policy body for Allow/s3:List*/Principal "*" statements.
 
 package vulnetix.rules.fugue_tf_aws_s3_06

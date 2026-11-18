@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00377).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: scans aws_security_group ingress sub-blocks; flags 0.0.0.0/0 ingress to ports other than 80 and 443.
 
 package vulnetix.rules.fugue_tf_aws_sg_01

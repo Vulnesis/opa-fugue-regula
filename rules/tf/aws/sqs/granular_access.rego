@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00049).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags aws_sqs_queue whose policy text contains an Allow+Principal:* statement with no Condition.
 
 package vulnetix.rules.fugue_tf_aws_sqs_01

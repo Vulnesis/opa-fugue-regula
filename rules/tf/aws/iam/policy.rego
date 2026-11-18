@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00007).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Flags aws_iam_user_policy (inline) and aws_iam_user_policy_attachment as best-effort signal of policies attached directly to users.
 
 package vulnetix.rules.fugue_tf_aws_iam_13

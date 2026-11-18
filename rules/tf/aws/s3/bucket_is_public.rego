@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00277).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags public-read/public-read-write ACL or bucket_policy with Principal "*" Allow, unless restrict_public_buckets or ignore_public_acls is enabled.
 
 package vulnetix.rules.fugue_tf_aws_s3_04

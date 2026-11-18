@@ -1,5 +1,5 @@
 # Adapted from https://github.com/fugue/regula (FG_R00102).
-# Ported to the Vulnetix Rego input schema (input.file_contents).
+# Ported to the Vulnesis Rego input schema (input.file_contents).
 # Simplified: flags any aws_security_group referenced by an aws_elb/aws_lb that has an ingress rule covering all ports.
 
 package vulnetix.rules.fugue_tf_aws_sg_02
